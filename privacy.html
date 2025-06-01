@@ -15,6 +15,7 @@
       document.querySelectorAll('.app-name').forEach(e => e.textContent = CONTACT.APP_NAME);
       document.querySelectorAll('.company-name').forEach(e => e.textContent = CONTACT.COMPANY_NAME);
       document.querySelectorAll('.website').forEach(e => e.textContent = CONTACT.WEBSITE);
+      document.getElementById('current-year').textContent = new Date().getFullYear();
     });
   </script>
 </head>
@@ -26,25 +27,26 @@
   </nav>
   <div class="container">
     <h1>Privacy Policy</h1>
-    <p>Effective date: January 1, 2024</p>
-    <p>This Privacy Policy describes how <span class="company-name">V Moving Momentum</span> ("we", "us", or "our") collects, uses, and shares your information when you use <span class="app-name">Hours</span> (the "App").</p>
+    <p>Effective date: January 1, 2025</p>
+    <p>This Privacy Policy describes how <span class="company-name">V Moving Momentum</span> ("we", "us", or "our") handles your information when you use <span class="app-name">Hours</span> (the "App").</p>
     <h2>Information We Collect</h2>
     <ul>
-      <li>Personal Information: such as your email address, name, and contact details.</li>
-      <li>Usage Data: information about how you use the App.</li>
+      <li><b>No Personal Data Collected:</b> The Hours app does not collect, store, or transmit any personal information to us or any third party. All data, including your tasks and preferences, is stored locally on your device using secure local storage.</li>
+      <li><b>Local Storage Only:</b> Your data never leaves your device. We do not use any external servers or cloud storage.</li>
     </ul>
     <h2>How We Use Information</h2>
     <ul>
-      <li>To provide and maintain the App.</li>
-      <li>To communicate with you.</li>
-      <li>To improve our services.</li>
+      <li>The app uses your locally stored data solely to provide and personalize your experience within the app. We do not access, share, or sell your data.</li>
+    </ul>
+    <h2>Your Privacy Rights</h2>
+    <ul>
+      <li>Since all data is stored locally, you have full control over your information. Uninstalling the app will delete all your data from your device.</li>
     </ul>
     <h2>Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at <span class="contact-email"></span> or on Instagram <span class="contact-instagram"></span>.</p>
+    <p>If you have any questions about this Privacy Policy, please contact us by <a href="mailto:v.moving.momentum+hoursinfo@gmail.com" class="contact-email">Email</a> or on <a href="https://instagram.com/vmovingmomentumapps" class="contact-instagram">Instagram</a>.</p>
     <div class="divider"></div>
     <footer style="text-align:center; color:var(--unselected-label); font-size:0.95rem; background:none; border:none; margin-top:3rem;">
-      &copy; <span class="company-name"></span> 2025
-      <span style="margin-left:1.5rem;"><a href="privacy.html" style="color:var(--unselected-label); text-decoration:underline; margin-right:1.2rem;">Privacy Policy</a><a href="terms.html" style="color:var(--unselected-label); text-decoration:underline;">Terms of Service</a></span>
+      &copy; <span class="company-name"></span> <span id="current-year"></span>
     </footer>
   </div>
 </body>

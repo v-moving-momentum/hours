@@ -15,6 +15,7 @@
       document.querySelectorAll('.app-name').forEach(e => e.textContent = CONTACT.APP_NAME);
       document.querySelectorAll('.company-name').forEach(e => e.textContent = CONTACT.COMPANY_NAME);
       document.querySelectorAll('.website').forEach(e => e.textContent = CONTACT.WEBSITE);
+      document.getElementById('current-year').textContent = new Date().getFullYear();
     });
   </script>
 </head>
@@ -29,14 +30,17 @@
     <p>Welcome to <span class="app-name">Hours</span>! These terms and conditions outline the rules and regulations for the use of <span class="company-name">V Moving Momentum</span>'s App.</p>
     <h2>Acceptance of Terms</h2>
     <p>By accessing this App, you accept these terms and conditions. Do not continue to use the App if you do not agree to all of the terms and conditions stated on this page.</p>
-    <h2>License</h2>
+    <h2>Local Data Storage</h2>
+    <p>All data you enter into the Hours app is stored locally on your device. The app does not transmit, sync, or back up your data to any external server or cloud service. You are responsible for backing up your device if you wish to preserve your data.</p>
+    <h2>Intellectual Property</h2>
     <p>Unless otherwise stated, <span class="company-name">V Moving Momentum</span> owns the intellectual property rights for all material in the App. All intellectual property rights are reserved.</p>
+    <h2>Disclaimer</h2>
+    <p>The app is provided "as is" without warranty of any kind. We are not responsible for any data loss that may occur due to device failure, app uninstallation, or other circumstances.</p>
     <h2>Contact Us</h2>
-    <p>If you have any questions about these Terms, please contact us at <span class="contact-email"></span> or on Instagram <span class="contact-instagram"></span>.</p>
+    <p>If you have any questions about these Terms, please contact us by <a href="mailto:v.moving.momentum+hoursinfo@gmail.com" class="contact-email">Email</a> or on <a href="https://instagram.com/vmovingmomentumapps" class="contact-instagram">Instagram</a>.</p>
     <div class="divider"></div>
     <footer style="text-align:center; color:var(--unselected-label); font-size:0.95rem; background:none; border:none; margin-top:3rem;">
-      &copy; <span class="company-name"></span> 2025
-      <span style="margin-left:1.5rem;"><a href="privacy.html" style="color:var(--unselected-label); text-decoration:underline; margin-right:1.2rem;">Privacy Policy</a><a href="terms.html" style="color:var(--unselected-label); text-decoration:underline;">Terms of Service</a></span>
+      &copy; <span class="company-name"></span> <span id="current-year"></span>
     </footer>
   </div>
 </body>
