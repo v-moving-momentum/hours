@@ -15,7 +15,6 @@
       document.querySelectorAll('.app-name').forEach(e => e.textContent = CONTACT.APP_NAME);
       document.querySelectorAll('.company-name').forEach(e => e.textContent = CONTACT.COMPANY_NAME);
       document.querySelectorAll('.website').forEach(e => e.textContent = CONTACT.WEBSITE);
-      document.getElementById('current-year').textContent = new Date().getFullYear();
     });
   </script>
 </head>
@@ -43,5 +42,8 @@
       &copy; <span class="company-name"></span> <span id="current-year"></span>
     </footer>
   </div>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html> 
