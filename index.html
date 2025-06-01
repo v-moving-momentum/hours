@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome | Hours</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="site.config.js"></script>
+  <script type="module">
+    import { CONTACT } from './site.config.js';
+    window.CONTACT = CONTACT;
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.contact-email').forEach(e => e.textContent = CONTACT.EMAIL);
+      document.querySelectorAll('.contact-instagram').forEach(e => e.textContent = CONTACT.INSTAGRAM);
+      document.querySelectorAll('.app-name').forEach(e => e.textContent = CONTACT.APP_NAME);
+      document.querySelectorAll('.company-name').forEach(e => e.textContent = CONTACT.COMPANY_NAME);
+      document.querySelectorAll('.website').forEach(e => e.textContent = CONTACT.WEBSITE);
+    });
+  </script>
+</head>
+<body>
+  <div class="top-right-links">
+    <a href="mailto:v.moving.momentum+hoursinfo@gmail.com" title="Contact" class="contact-icon" style="background:#fffbe7;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/maildotru.svg" alt="Email" style="width:22px;height:22px;filter:grayscale(0.2);">
+    </a>
+    <a href="https://instagram.com/vmovingmomentumapps" target="_blank" title="Instagram" class="contact-icon" style="background:#fffbe7;"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" style="width:22px;height:22px;filter:grayscale(0.2);"></a>
+  </div>
+  <div class="hero-modern" style="background: transparent; box-shadow: none; border-radius: 0; padding: 3.5rem 2.5rem 2.5rem 2.5rem; margin-top:2.5rem; position:relative; overflow:visible;">
+    <!-- Hero Section -->
+    <section style="text-align:center; margin-bottom:2.5rem;">
+      <h1 class="app-name" style="font-size:2.8rem; font-weight:800; margin-bottom:0.7rem; letter-spacing:-1px;">Allocate Your Hours, Own Your Day</h1>
+      <div style="font-size:1.15rem; color:var(--unselected-label); margin-bottom:1.2rem; letter-spacing:0.01em; max-width:500px; margin-left:auto; margin-right:auto; line-height:1.6;">
+        <span style="color:var(--primary); font-weight:600;">Allocate your hours to what matters most.</span><br>
+        A minimal, beautiful daily planner for clear, visual time management.<br>
+        <span style="color:var(--primary);">Drag and drop tasks. See your day at a glance. Track your time with ease.</span>
+      </div>
+      <a id="download-play" href="#" target="_blank" style="display:inline-block; margin-top:1.2rem;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" style="height:54px; width:auto; box-shadow:0 2px 8px rgba(0,0,0,0.07); border-radius:12px;">
+      </a>
+    </section>
+    <!-- Screenshots/Video Placeholder -->
+    <section style="text-align:center; margin-bottom:2.5rem;">
+      <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;">
+        <div style="width:180px; height:360px; background:var(--divider); border-radius:16px; display:flex; align-items:center; justify-content:center; color:var(--unselected-label); font-size:1rem;">Screenshot 1</div>
+        <div style="width:180px; height:360px; background:var(--divider); border-radius:16px; display:flex; align-items:center; justify-content:center; color:var(--unselected-label); font-size:1rem;">Screenshot 2</div>
+        <div style="width:180px; height:360px; background:var(--divider); border-radius:16px; display:flex; align-items:center; justify-content:center; color:var(--unselected-label); font-size:1rem;">Screenshot 3</div>
+      </div>
+      <p style="color:var(--unselected-label); margin-top:0.5rem;">Add screenshots of your main planner, task allocation, and time bar views here.</p>
+    </section>
+    <!-- Features Section -->
+    <section style="margin-bottom:2.5rem;">
+      <h2 style="text-align:center; margin-bottom:1.5rem;">Why You'll Love Hours</h2>
+      <ul style="list-style:none; padding:0; max-width:600px; margin:0 auto;">
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">🕒</span>
+          <span><strong>Visualize Your Day:</strong> Instantly see your time allocation with a unique vertical 24-hour bar.</span>
+        </li>
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">📋</span>
+          <span><strong>Effortless Task Planning:</strong> Add, edit, and drag tasks to allocate hours and reorder your day.</span>
+        </li>
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">🔄</span>
+          <span><strong>Recurring Routines:</strong> Auto-generate recurring tasks for your daily habits and routines.</span>
+        </li>
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">📅</span>
+          <span><strong>Swipe Between Days:</strong> Quickly review, plan ahead, or look back with intuitive swipe navigation.</span>
+        </li>
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">⏳</span>
+          <span><strong>Track Remaining Hours:</strong> Stay on top of your goals and avoid overbooking with real-time remaining hours tracking.</span>
+        </li>
+        <li style="margin-bottom:1.25rem; display:flex; align-items:flex-start; gap:0.75rem;">
+          <span style="font-size:1.5rem;">🎨</span>
+          <span><strong>Minimal & Modern:</strong> Enjoy a clean, distraction-free interface designed for focus and productivity.</span>
+        </li>
+      </ul>
+    </section>
+    <!-- How It Works Section -->
+    <section style="margin-bottom:2.5rem;">
+      <h2 style="text-align:center; margin-bottom:1.5rem;">How It Works</h2>
+      <ol style="max-width:600px; margin:0 auto; padding-left:1.2em;">
+        <li style="margin-bottom:0.75rem;"><strong>Add Tasks:</strong> Tap to add tasks and assign hours for your day.</li>
+        <li style="margin-bottom:0.75rem;"><strong>Visualize:</strong> Instantly see your day as a vertical bar—no more guessing where your time goes.</li>
+        <li style="margin-bottom:0.75rem;"><strong>Reorder & Edit:</strong> Drag and drop to prioritize, edit, or delete tasks as your day evolves.</li>
+        <li style="margin-bottom:0.75rem;"><strong>Swipe:</strong> Move between days to plan ahead or review past schedules.</li>
+        <li style="margin-bottom:0.75rem;"><strong>Track:</strong> See remaining hours and avoid overbooking at a glance.</li>
+      </ol>
+    </section>
+    <footer style="text-align:center; color:var(--unselected-label); font-size:0.95rem; background:none; border:none; margin-top:3rem;">
+      &copy; <span class="company-name"></span> 2025
+      <span style="margin-left:1.5rem;"><a href="privacy.html" style="color:var(--unselected-label); text-decoration:underline; margin-right:1.2rem;">Privacy Policy</a><a href="terms.html" style="color:var(--unselected-label); text-decoration:underline;">Terms of Service</a></span>
+    </footer>
+  </div>
+  <script>
+    // Set Play Store link from config
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.CONTACT && window.CONTACT.GOOGLE_PLAY_URL) {
+        document.getElementById('download-play').href = window.CONTACT.GOOGLE_PLAY_URL;
+      }
+    });
+  </script>
+</body>
+</html> 

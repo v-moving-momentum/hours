@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Hours</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="site.config.js"></script>
+  <script type="module">
+    import { CONTACT } from './site.config.js';
+    window.CONTACT = CONTACT;
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.contact-email').forEach(e => e.textContent = CONTACT.EMAIL);
+      document.querySelectorAll('.contact-instagram').forEach(e => e.textContent = CONTACT.INSTAGRAM);
+      document.querySelectorAll('.app-name').forEach(e => e.textContent = CONTACT.APP_NAME);
+      document.querySelectorAll('.company-name').forEach(e => e.textContent = CONTACT.COMPANY_NAME);
+      document.querySelectorAll('.website').forEach(e => e.textContent = CONTACT.WEBSITE);
+    });
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html" class="active">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+  </nav>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>Effective date: January 1, 2024</p>
+    <p>This Privacy Policy describes how <span class="company-name">V Moving Momentum</span> ("we", "us", or "our") collects, uses, and shares your information when you use <span class="app-name">Hours</span> (the "App").</p>
+    <h2>Information We Collect</h2>
+    <ul>
+      <li>Personal Information: such as your email address, name, and contact details.</li>
+      <li>Usage Data: information about how you use the App.</li>
+    </ul>
+    <h2>How We Use Information</h2>
+    <ul>
+      <li>To provide and maintain the App.</li>
+      <li>To communicate with you.</li>
+      <li>To improve our services.</li>
+    </ul>
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at <span class="contact-email"></span> or on Instagram <span class="contact-instagram"></span>.</p>
+    <div class="divider"></div>
+    <footer style="text-align:center; color:var(--unselected-label); font-size:0.95rem; background:none; border:none; margin-top:3rem;">
+      &copy; <span class="company-name"></span> 2025
+      <span style="margin-left:1.5rem;"><a href="privacy.html" style="color:var(--unselected-label); text-decoration:underline; margin-right:1.2rem;">Privacy Policy</a><a href="terms.html" style="color:var(--unselected-label); text-decoration:underline;">Terms of Service</a></span>
+    </footer>
+  </div>
+</body>
+</html> 

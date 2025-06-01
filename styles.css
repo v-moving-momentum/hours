@@ -1,0 +1,155 @@
+:root {
+  --primary: #121212;
+  --background: #F5F5F0;
+  --surface: #FFFFFF;
+  --accent: #CCCCCC;
+  --unselected-label: #666666;
+  --divider: #EEEEEE;
+  --error: #B71C1C;
+  --selected-day-bg: #F5F5F0;
+  --today-circle-selected: #121212;
+  --today-circle-unselected: #333333;
+  --task-default: #64B5F6;
+  --font-display: 'Playfair Display', serif;
+  --font-title: Georgia, serif;
+  --font-body: 'Inter', Arial, sans-serif;
+  --font-error: 'Montserrat', Arial, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--primary);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+.title, .dialog-title {
+  font-family: var(--font-title);
+}
+
+.error, .snackbar {
+  font-family: var(--font-error);
+  color: var(--error);
+}
+
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--divider);
+  padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  font-size: 1.08rem;
+}
+nav > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: var(--font-body);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+nav a.active, nav a:hover {
+  background: var(--divider);
+}
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--divider);
+  color: var(--primary);
+  font-size: 1.4rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  text-decoration: none;
+  margin-left: 0;
+  border: none;
+}
+.contact-icon:hover {
+  background: var(--accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-2px) scale(1.07);
+}
+footer {
+  background: none;
+  border: none;
+  margin-top: 3rem;
+  color: var(--unselected-label);
+  font-size: 0.95rem;
+  text-align: center;
+}
+footer a {
+  color: var(--unselected-label);
+  text-decoration: underline;
+  margin-right: 1.2rem;
+}
+footer a:last-child {
+  margin-right: 0;
+}
+.container {
+  max-width: 700px;
+  margin: 2.5rem auto;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2.5rem;
+}
+
+.divider {
+  border-bottom: 1px solid var(--divider);
+  margin: 2rem 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+.hero-modern {
+  background: #f7f6fd;
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(80,80,120,0.07);
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.social-icons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+#download-play img {
+  height: 54px;
+  width: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-radius: 12px;
+  transition: box-shadow 0.2s, transform 0.1s;
+}
+#download-play:hover img {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  transform: translateY(-2px) scale(1.04);
+}
+.top-right-links {
+  position: absolute;
+  top: 2.2rem;
+  right: 2.5rem;
+  display: flex;
+  gap: 0.7rem;
+  z-index: 10;
+} 
